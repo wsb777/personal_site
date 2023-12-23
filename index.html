@@ -4,32 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href ="./fonts/Comfortaa/font.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
     <title>WTP</title>
 </head>
 <body>
     <nav>
         <ul>
-            <li>
-                <button>
-                    <img>
-                </button>
+            <li class="nav-element">
+                <a class="nav-link" href="#about">
+                    <img class="nav-image" src="./images/profile.svg">
+                </a>
             </li>
-            <li>
-                <button>
-                    <img>
-                </button>
+            <li class="nav-element">
+                <a class="nav-link" href="#resume">
+                    <img class="nav-image" src="./images/resume.svg">
+                </a>
             </li>
-            <li>
-                <button>
-                    <img>
-                </button>
+            <li class="nav-element">
+                <a class="nav-link" href="#skills">
+                    <img class="nav-image" src="./images/science.svg">
+                </a>
             </li>
-            <li>
-                <button>
-                    <img>
-                </button>
+            <li class="nav-element">
+                <a class="nav-link" href="#portfolio">
+                    <img class="nav-image" src="./images/portfolio.svg">
+                </a>
+            </li>
+            <li class="nav-element">
+                <a class="nav-link" href="#share">
+                    <img class="nav-image" src="./images/share.svg">
+                </a>
             </li>
         </ul>
     </nav>
@@ -44,7 +51,17 @@
         <section class="resume-content section-block" id="resume">
             <div class="resume">
                 <h2>Resume</h2>
-                <p>content</p>
+                <div class="part-of-time">
+                    <span class="date">2023</span>
+                    <div class="employment">
+                        <h3>OVK.Start</h3>
+                        <p>Programmer</p>
+                    </div>
+                    <div class="employment">
+                        <h3>Yandex.Practicum</h3>
+                        <p>Frontend development student</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="skills-content section-block" id="skills">
@@ -53,15 +70,23 @@
             <div class="skill python"><div class="skill-text"><h3>Python</h3><p>Python is a versatile high-level programming language known for its readability, ease of use, and extensive libraries, suitable for web development, data analysis, and automation.</p></div></div>
             <div class="skill liferay"><div class="skill-text"><h3>Liferay</h3><p>Liferay is a web platform that helps businesses create digital experiences for their customers, employees, and partners.</p></div></div>
         </section>
-        <section class="portfolio section-block">
-            <div></div>
+        <section class="portfolio section-block" id="portfolio">
+            <div class="slider">
+                <div class="slide">
+                    <a href="https://retaility.ru/" target="__blank"><img src="./images/photo_2023-12-23_15-08-38.jpg" alt="retaility" class="slide-image"><span>retaility</span></a>
+                </div>
+                <div class="slide">
+                    <a href="https://iv-textile.ru/" target="__blank"><img src="./images/photo_2023-12-23_15-09-22.jpg" alt="iv-textile" class="slide-image"><span>iv-textile</span></a>
+                </div>
+            </div>
         </section>
-        <section class="share-buttons section-block">
+        <section class="share-buttons section-block" id="share">
             <a class="footer-link" href="https:/t.me/wsb_dev" target="_blank"><img class="footer-logo" src="./images/telegram.svg"></a>
             <a class="footer-link" href="https://github.com/wsb777" target="_blank"><img class="footer-logo" src="./images/github.svg"></a>
             <a class="footer-link" href="https://vk.com/conopal" target="_blank"><img class="footer-logo" src="./images/vk.svg"></a>
             <a class="footer-link" href="mailto:a.sizov.wsb@gmail.com" target="_blank"><img class="footer-logo" src="./images/gmail.svg"></a>
         </section>
     </main>
+    <script src="scripts/slider.js"></script>
 </body>
 </html>
